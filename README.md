@@ -176,8 +176,8 @@ Feel free to use and adapt for learning or production.
 
 ---
 
-**Author**: *Jaya Chandra Kadiveti* 
+**Author**: *Saiyudh Mannan* 
 
-**LinkedIn**: [username](https://www.linkedin.com/in/jayachandrakadiveti/) 
+**LinkedIn**: [saiyudh mannan](https://www.linkedin.com/in/saiyudh-mannan/) 
 
-**Contact**: [Kadivetijayachandra@gmail.com](mailto:Kadivetijayachandra@gmail.com)
+**Contact**: [saiyudh.mannan@gmail.com](saiyudh.mannan@gmail.com)
