@@ -11,10 +11,10 @@ spark.conf.set(
 
 
 # Paths
-silver_path = "abfss://<<container>>@<<Storageaccount_name>>.core.windows.net/<<path>>"
-gold_dim_patient = "abfss://<<container>>@<<Storageaccount_name>>.core.windows.net/<<path>>"
-gold_dim_department = "abfss://<<container>>@<<Storageaccount_name>>.core.windows.net/<<path>>"
-gold_fact = "abfss://<<container>>@<<Storageaccount_name>>.core.windows.net/<<path>>"
+silver_path = "abfss://<<container>>@<<Storageaccount_name>>.dfs.core.windows.net/<<path>>"
+gold_dim_patient = "abfss://<<container>>@<<Storageaccount_name>>.dfs.core.windows.net/<<path>>"
+gold_dim_department = "abfss://<<container>>@<<Storageaccount_name>>.dfs.core.windows.net/<<path>>"
+gold_fact = "abfss://<<container>>@<<Storageaccount_name>>.dfs.core.windows.net/<<path>>"
 
 # Read silver data (assume append-only)
 silver_df = spark.read.format("delta").load(silver_path)

@@ -7,8 +7,8 @@ spark.conf.set(
   "<<Storage_Account_access_key>>"
 )
 
-bronze_path = "abfss://<<container>>@<<Storageaccount_name>>.core.windows.net/<<path>>"
-silver_path = "abfss://<<container>>@<<Storageaccount_name>>.core.windows.net/<<path>>"
+bronze_path = "abfss://<<container>>@<<Storageaccount_name>>.dfs.core.windows.net/<<path>>"
+silver_path = "abfss://<<container>>@<<Storageaccount_name>>.dfs.core.windows.net/<<path>>"
 
 #read from bronze
 bronze_df = (

@@ -1,0 +1,1 @@
+@greaterOrEquals(length(activity('Get Metadata1').output.childItems),5 )
