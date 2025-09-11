@@ -1,6 +1,13 @@
+-- if you face an error like this:
+-- There is already a master key in the database. Please drop it before performing this statement.
+-- use the following code to drop the master key
+
+--DROP MASTER KEY;
+--GO 
+
 CREATE MASTER KEY ENCRYPTION BY PASSWORD = '<<Password>>';
 
--- CREATING A SCOPE
+-- CREATING A SCOPE,to access storage account
 CREATE DATABASE SCOPED CREDENTIAL storage_credential
 WITH IDENTITY = 'Managed Identity';
 
@@ -8,7 +15,7 @@ WITH IDENTITY = 'Managed Identity';
 CREATE EXTERNAL DATA SOURCE gold_data_source
 WITH (
     TYPE = HADOOP,
-    LOCATION = 'abfss://<<container>>@<<Storageaccount_name>>.core.windows.net/',
+    LOCATION = 'abfss://<<container>>@<<Storageaccount_name>>.dfs.core.windows.net/',
     CREDENTIAL = storage_credential
 );
 
